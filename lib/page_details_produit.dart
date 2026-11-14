@@ -1,3 +1,4 @@
+//Debut de la page details_produit.dart
 import 'package:flutter/material.dart';
 import 'models/produit.dart';
 
@@ -20,14 +21,19 @@ class DetailsProduit extends StatelessWidget {
               style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 10),
-            Text("Prix : ${produit.prix} \$", style: TextStyle(fontSize: 18)),
+            Text(
+              "Description : ${produit.description}",
+              style: TextStyle(fontSize: 16),
+            ),
             SizedBox(height: 10),
-            Text("Description :", style: TextStyle(fontSize: 18)),
-            SizedBox(height: 5),
-            Text(produit.description, style: TextStyle(fontSize: 16)),
+            Text(
+              "Prix : ${produit.prix} \$",
+              style: TextStyle(fontSize: 18, color: Colors.green),
+            ),
           ],
         ),
       ),
     );
   }
 }
+//Fin de la page details_produit.dart

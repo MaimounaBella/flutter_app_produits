@@ -13,13 +13,18 @@ class ListProduits extends StatelessWidget {
       prix: 1200.0,
     ),
     Produit(
-      nom: "Smartphone",
-      description: "Téléphone nouvelle génération avec triple caméra.",
-      prix: 900.0,
+      nom: "Casque son JBL",
+      description: "Casque audio JBL avec son de haute qualité.",
+      prix: 375.0,
     ),
     Produit(
-      nom: "Casque Bluetooth",
-      description: "Casque sans fil avec réduction de bruit.",
+      nom: "Chaise de bureau Arhaus",
+      description: "Chaise de bureau ergonomique de qualité Arhaus de gaming",
+      prix: 780.0,
+    ),
+    Produit(
+      nom: "Souris sans fil Logitech",
+      description: "Souris sans fil Logitech précise et confortable.",
       prix: 150.0,
     ),
   ];
@@ -27,7 +32,7 @@ class ListProduits extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Liste de Produits")),
+      appBar: AppBar(title: Text("Liste des produits")),
       body: ListView.builder(
         itemCount: produits.length,
         itemBuilder: (context, index) {
@@ -48,7 +53,7 @@ class ListProduits extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                  builder: (context) => DetailsProduit(produit: produit),
+                      builder: (context) => DetailsProduit(produit: produit),
                     ),
                   );
                 },
@@ -60,3 +65,4 @@ class ListProduits extends StatelessWidget {
     );
   }
 }
+//Fin de la page liste des produits

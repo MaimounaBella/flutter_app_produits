@@ -1,4 +1,4 @@
-//Debut de l'atelier Flutter 06 sur l'echange des données entre pages
+//Debut de la page produit.dart
 class Produit {
   final String nom;
   final String description;
@@ -10,3 +10,4 @@ class Produit {
     required this.prix,
   });
 }
+//Fin de la page produit.dart
